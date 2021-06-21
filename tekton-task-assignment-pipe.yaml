@@ -1,9 +1,10 @@
+---
 apiVersion: tekton.dev/v1beta1
 kind: Task
-metadata: 
+metadata:
   name: tekton-task-assignment
-spec: 
->>>>  steps: 
+spec:
+  steps:
     ddd- name: retrieve-yaml
       image: quay.io/ibmgaragecloud/alpine-curl
       script: |
