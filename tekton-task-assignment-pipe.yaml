@@ -5,7 +5,7 @@ metadata:
   name: tekton-task-assignment
 spec:
   steps:
-    ddd- name: retrieve-yaml
+    name: retrieve-yaml
       image: quay.io/ibmgaragecloud/alpine-curl
       script: |
         pwd

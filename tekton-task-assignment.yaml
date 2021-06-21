@@ -1,10 +1,10 @@
 ---
 apiVersion: tekton.dev/v1beta1
 kind: Task
-metadata: 
+metadata:
   name: tekton-task-assignment
-spec: 
-  steps: 
+spec:
+  steps:
     - name: retrieve-yaml
       image: quay.io/ibmgaragecloud/alpine-curl
       script: |
@@ -17,7 +17,6 @@ spec:
       script: |
         cd k8s
         head -n 24 run-steps-as-non-root.yaml > run-steps-as-non-root-task-only.yaml
-    
     - name: swap-image
       image: quay.io/ibmgaragecloud/alpine-curl
       script: |
